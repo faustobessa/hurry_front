@@ -1,0 +1,112 @@
+body{
+overflow:hidden;
+overflow-y: auto;
+}
+img{
+max-width: 100%;
+height:auto;
+}
+.login-wrapper{
+min-height: 100vh;
+background:#333;
+}
+.login-wrapper .row{
+height:100%;
+align-items: center;
+}
+.login-wrapper .row .col-12{
+padding:0;
+}
+.bg-login{
+    min-height: 100vh;
+    position: relative;
+    background: url(../images/bg-login.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.aba-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg-login:before{
+content:"";
+width:100%;
+height:100%;
+position: absolute;
+left:0;
+top:0;
+z-index:2;
+background: linear-gradient(314.59deg, rgba(0, 0, 0, 0.8) 2.95%, rgba(31, 30, 30, 0) 154.79%);
+filter: blur(4px);
+}
+.form-login{
+    width: 308px;
+    max-width: 100%;
+    height:auto;
+    padding:0 20px 20px 20px;
+    background:#302F2F;
+    border-radius:25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    min-height: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-login .logo-form{
+max-width:158px;
+margin:auto;
+}
+.form-hurry{
+text-align: center;
+}
+.form-hurry input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #fff;
+    width: 100%;
+    max-width: 230px;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height:35px;
+    border-radius: 6px;
+  }
+  .form-hurry button {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: linear-gradient(90deg, #D07E03 0%, rgba(208, 126, 3, 0.65) 101.82%);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    border: 0;
+    margin-top:15px;
+    height:35px;
+    max-width: 160px;
+    color: #FFEEEE;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form-hurry button:hover,.form-hurry button:active,.form-hurry button:focus {
+    background: linear-gradient(90deg, rgba(208, 126, 3, .65) 0%, rgba(208, 126, 3, 1) 101.82%);
+    background-color: #fff;
+  }
+  .form-hurry .message {
+    margin: 15px 0 0;
+    color: #fff;
+    font-weight:700;
+    font-size: 14px;
+    text-align: center;
+  }
+  .form-hurry .message a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .form-hurry .message a:hover{
+    color:#D07E03;
+  }

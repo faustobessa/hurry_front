@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Hurry - Criar Evento</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#302F2F">
+<meta name="apple-mobile-web-app-status-bar-style" content="#302F2F">
+<meta name="msapplication-navbutton-color" content="#302F2F">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link rel="icon" href="../images/favicon.png" sizes="32x32" />
+<link rel="icon" href="../images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/favicon.png" />
+<meta name="msapplication-TileImage" content="images/favicon.png" />
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/forms.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+<div class="main main-forms evento-hurry">
+    <!-- Início da Navegação -->
+    <button class="menu-button d-block d-lg-none d-xl-none"><span>MENU</span></button>
+    <div class="container">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="nav-section">
+                <div class="logo"><img src="../images/hurry_logo.png" alt="Hurry" title="Hurry"></div>
+                <div class="user-status">
+                    <div id="img-perfil" class="img-perfil"><img src="../images/perfil.png"></div>
+                    <div id="name-perfil" class="name-perfil"><span>João da Silva</span></div>
+                </div> 
+                <div class="navegacao">  
+                    <ul id="menu-bar" class="menu">
+                        <li id="item-dash"><a href="#" class="open-page">Dashboard</a></li>
+                        <li id="item-eventos-pendetes"><a href="#" class="open-page">Eventos Pendentes</a></li>
+                        <li id="item-cria-evento"><a href="#" class="open-page">Criar Eventos</a></li>
+                        <li id="item-forcecedores"><a href="#" class="open-page">Fornecedores</a></li>
+                        <li id="item-users"><a href="#" class="open-page">Usuários</a></li>
+                        <li id="item-parceiros"><a href="#" class="open-page">Parceiros</a></li>
+                        <li id="item-logout"><a href="#" class="logout-section">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim da Navegação -->
+
+            <!-- Início do conteúdo -->
+            <div class="body-section">
+                <h2 class="title-section">Criar Evento</h2>
+                <div class="row">
+                    <div class="col-12 col-xl-12 col-md-12">
+
+                        <!-- Tabela dados do evento -->
+                        <div class="body-interno int-block">
+                            <div class="table-event">
+                                <table class="table-event-hurry">
+                                    <thead>
+                                        <tr>
+                                            <th>Evento X</th>
+                                            <th>Data</th>
+                                            <th>Endereço</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22:30 até 02:40</td>
+                                            <td>22/08/2021</td>
+                                            <td>Rua Almeida - 120 Santo André/SP</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- fim tabela dados do evento -->
+
+                    </div>
+                    <div class="col-12 col-xl-7 col-md-6">
+
+                        <!-- Início da tabela de artistas -->
+                        <div class="body-interno int-block">
+                            <div class="table-event">
+                                <table class="table-event table-artista" id="table-artista">
+                                    <thead>
+                                        <tr>
+                                            <th class="nome-art">Nome</th>
+                                            <th class="horario-art">Horário</th>
+                                            <th class="img-art">Imagem</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="nome-art">Roberto Carlos</td>
+                                            <td id="horario-art">00:30</td>
+                                            <td id="img-art"><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="nome-art">Marisa Monte</td>
+                                            <td id="horario-art">22:00</td>
+                                            <td id="img-art"><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Fim da tabela de artistas -->
+
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-6">
+
+                        <!-- Início da tabela de ingressos -->
+                        <div class="body-interno int-block">
+                            <div class="table-event">
+                                <table class="table-ingressos" id="table-ingressos">
+                                    <tboby>
+                                        <tr>
+                                            <td class="n-ingresso">Pista</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$20,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="n-ingresso">Camarote</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$80,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="n-ingresso">Área Vip</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$120,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                    </tboby>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Fim da tabela de ingressos -->
+
+                    </div>
+                    <div class="col-12 col-xl-8 col-md-12">
+                        <!-- Início da tabela de bebidas -->
+                        <div class="body-interno mei-block">
+                            <div class="table-event">
+                                <table class="table-bebidas" id="table-bebidas">
+                                    <thead>
+                                        <tr>
+                                            <th>Marca</th>
+                                            <th>Quantidade</th>
+                                            <th>Custo</th>
+                                            <th>Venda</th>
+                                            <th>Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Cerveja</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Fim tabela de bebidas -->
+
+                        <!-- Tabela de comidas -->
+                        <div class="body-interno mei-block">
+                            <div class="table-event">
+                                <table class="table-comidas" id="table-comidas">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Quantidade</th>
+                                            <th>Custo</th>
+                                            <th>Venda</th>
+                                            <th>Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Churros</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Fritura</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Fim tabela de comidas -->
+
+                    </div>
+                    <div class="col-12 col-xl-4 col-md-12">
+
+                        <!-- Capa do evento -->
+                        <div class="body-interno">
+                            <h6 class="title-capa">Capa do Evento</h6>
+                            <div class="image-capa">
+                                <img src="../images/capa.jpg">
+                            </div>
+                        </div>
+                        <!-- fim capa do evento -->
+
+                        <!-- Formulário de aprovar evento -->
+                        <div class="aprova-evento">
+                            <div class="opcoes-event">
+                                <form class="respost-event" id="respost-event" action="#" method="method">
+                                <label class="checkbox">
+                                    <span class="radio__label">Aprovado</span>
+                                    <span class="checkbox__input">
+                                      <input type="checkbox" name="aprovado" id="aprovado">
+                                      <span class="checkbox__control">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="rgba(9, 202, 52,1)"/></svg>
+                                      </span>
+                                    </span>
+                                  </label>
+                                  <label class="checkbox reprova">
+                                    <span class="radio__label">Reprovado</span>
+                                    <span class="checkbox__input">
+                                      <input type="checkbox" name="reprovado" id="reprovado">
+                                      <span class="checkbox__control">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="rgba(255, 0, 0,1)"/></svg>
+                                      </span>
+                                    </span>
+                                  </label>
+                                  <h6 class="title-comissao">Comissão do Evento</h6>
+                                  <input type="text" class="input-form input-text" id="valor-comissao" name="valor-comissao" placeholder="Comissão">
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Fim da aprovação de evento -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do conteúdo -->
+        </div>
+    </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ <script src="../js/uploads.js"></script>
+ <script src="../js/custom-file-input.js"></script>
+</body>
+</html>

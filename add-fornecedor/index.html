@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Hurry - Adicionar Fornecedor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#302F2F">
+<meta name="apple-mobile-web-app-status-bar-style" content="#302F2F">
+<meta name="msapplication-navbutton-color" content="#302F2F">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link rel="icon" href="../images/favicon.png" sizes="32x32" />
+<link rel="icon" href="../images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/favicon.png" />
+<meta name="msapplication-TileImage" content="images/favicon.png" />
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/forms.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+<div class="main main-forms add-forncedor">
+
+    <!-- Início da navegação -->
+    <button class="menu-button d-block d-lg-none d-xl-none"><span>MENU</span></button>
+    <div class="container">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="nav-section">
+                <div class="logo"><img src="../images/hurry_logo.png" alt="Hurry" title="Hurry"></div>
+                <div class="user-status">
+                    <div id="img-perfil" class="img-perfil"><img src="../images/perfil.png"></div>
+                    <div id="name-perfil" class="name-perfil"><span>João da Silva</span></div>
+                </div> 
+                <div class="navegacao">  
+                    <ul id="menu-bar" class="menu">
+                        <li id="item-dash"><a href="#" class="open-page">Dashboard</a></li>
+                        <li id="item-eventos-pendetes"><a href="#" class="open-page">Eventos Pendentes</a></li>
+                        <li id="item-cria-evento"><a href="#" class="open-page">Criar Eventos</a></li>
+                        <li id="item-forcecedores"><a href="#" class="open-page">Fornecedores</a></li>
+                        <li id="item-users"><a href="#" class="open-page">Usuários</a></li>
+                        <li id="item-parceiros"><a href="#" class="open-page">Parceiros</a></li>
+                        <li id="item-logout"><a href="#" class="logout-section">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim da navegação -->
+
+
+            <div class="body-section">
+                <div class="row">
+                    <div class="col-12 col-xl-4 col-lg-6 col-md-6">
+
+                        <!-- Início da adição de fornecedor -->
+                        <div class="body-interno">
+                            <h2 class="title-section">Adicionar Fornecedor</h2>
+                            <form class="form-fornecedor form" id="form-add-fornecedor" action="#" method="post">
+                                <div class="row">
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="nome-fornecedor" name="nome-fornecedor" placeholder="Nome">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="servico-fornecedor" name="servico-fornecedor" placeholder="Tipo de Serviço">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="favorecido-fornecedor" name="favorecido-fornecedor" placeholder="Favorecido">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="valor-fornecedor" name="valor-fornecedor" placeholder="Valor">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="data-fatura-forncedor" name="data-fatura-forncedor" placeholder="Data Fatura" onkeypress="$(this).mask('00/00/00');">
+                                    </div>
+
+                                    <!-- Início dados bancários form -->
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <h3 class="title-option" style="margin-top:25px;">Dados Bancários</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="agencia-fornecedor" name="agencia-fornecedor" placeholder="Agência">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="conta-fornecedor" name="conta-fornecedor" placeholder="Conta">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="conta-fav-fornecedor" name="conta-fav-fornecedor" placeholder="Favorecido">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="cpf-cnpj-fornecedor" name="cpf-cnpj-fornecedor" placeholder="CNPJ/CPF">
+                                    </div>
+                                    <!-- Fim dados bancários form -->
+
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Finalizar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Fim da adição de fornecedor -->
+
+                    </div>
+                    <div class="col-12 col-xl-8 col-lg-6 col-md-6">
+
+                        <!-- Tabela de fornecedores -->
+                        <div class="body-interno">
+                            <h2 class="title-section">Fornecedores</h2>
+                            <div class="table-event">
+                                <table class="table-fornecedor" id="table-fornecedor">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Tipo de Serviço</th>
+                                            <th>Valor a Pagar</th>
+                                            <th>Data</th>
+                                            <th>C</th>
+                                            <th>A</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>Bebidas</td>
+                                            <td>R$12.000,00</td>
+                                            <td>11/08/21</td>
+                                            <td>35111</td>
+                                            <td>0212</td>
+                                            <td><span class="status"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>Bebidas</td>
+                                            <td>R$12.000,00</td>
+                                            <td>11/08/21</td>
+                                            <td>35111</td>
+                                            <td>0212</td>
+                                            <td><span class="status"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>Bebidas</td>
+                                            <td>R$12.000,00</td>
+                                            <td>11/08/21</td>
+                                            <td>35111</td>
+                                            <td>0212</td>
+                                            <td><span class="status"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>Bebidas</td>
+                                            <td>R$12.000,00</td>
+                                            <td>11/08/21</td>
+                                            <td>35111</td>
+                                            <td>0212</td>
+                                            <td><span class="status"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Fim Tabela de fornecedores -->>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ <script src="../js/uploads.js"></script>
+ <script src="../js/custom-file-input.js"></script>
+</body>
+</html>

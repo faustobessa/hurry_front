@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Hurry - Criar Evento</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#302F2F">
+<meta name="apple-mobile-web-app-status-bar-style" content="#302F2F">
+<meta name="msapplication-navbutton-color" content="#302F2F">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link rel="icon" href="../images/favicon.png" sizes="32x32" />
+<link rel="icon" href="../images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/favicon.png" />
+<meta name="msapplication-TileImage" content="images/favicon.png" />
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/forms.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+<div class="main main-forms">
+    <button class="menu-button d-block d-lg-none d-xl-none"><span>MENU</span></button>
+    <div class="container">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="nav-section">
+                <div class="logo"><img src="../images/hurry_logo.png" alt="Hurry" title="Hurry"></div>
+                <div class="user-status">
+                    <div id="img-perfil" class="img-perfil"><img src="../images/perfil.png"></div>
+                    <div id="name-perfil" class="name-perfil"><span>João da Silva</span></div>
+                </div> 
+                <div class="navegacao">  
+                    <ul id="menu-bar" class="menu">
+                        <li id="item-dash"><a href="#" class="open-page">Dashboard</a></li>
+                        <li id="item-eventos-pendetes"><a href="#" class="open-page">Eventos Pendentes</a></li>
+                        <li id="item-cria-evento"><a href="#" class="open-page">Criar Eventos</a></li>
+                        <li id="item-forcecedores"><a href="#" class="open-page">Fornecedores</a></li>
+                        <li id="item-users"><a href="#" class="open-page">Usuários</a></li>
+                        <li id="item-parceiros"><a href="#" class="open-page">Parceiros</a></li>
+                        <li id="item-logout"><a href="#" class="logout-section">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body-section">
+                <h2 class="title-section">Criar Evento</h2>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <h3 class="title-option">Evento</h3>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <form class="criar-evento form" id="criar-evento" action="#" method="#">
+                                <div class="row row-one">
+                                    <div class="col-12 col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-12 col-md-12">
+                                                <input type="text" class="input-form input-text" id="nome-evento" name="nome-evento" placeholder="Nome">
+                                            </div>
+                                            <div class="col-12 col-lg-12 col-md-12">
+                                                <input type="text" class="input-form input-text" id="data-evento" name="data-evento" placeholder="Data"  onkeypress="$(this).mask('00/00/0000');">
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="text" class="input-form input-text" id="inicio-evento" name="inicio-evento" placeholder="Início" onkeypress="$(this).mask('00:00');">
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="text" class="input-form input-text" id="fim-evento" name="fim-evento" placeholder="Fim" onkeypress="$(this).mask('00:00');">
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="text" class="input-form input-text" id="estilo-evento" name="estilo-evento" placeholder="Estilo Musical">
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="text" class="input-form input-text" id="tipo-evento" name="tipo-evento" placeholder="Tipo">
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="file" name="imagem-evento" id="imagem-evento" class="inputfile"/>
+                                                <label for="imagem-evento"><span>Imagem</span></label>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-12">
+                                                <input type="file" name="propaganda-evento" id="propaganda-evento" class="inputfile"/>
+                                                <label for="propaganda-evento"><span>Propaganda</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12">
+                                            <input type="text" class="input-form input-text" id="rua" name="rua" placeholder="Rua">
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12">
+                                            <input type="text" class="input-form input-text" id="numero" name="numero" placeholder="Número">
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12">
+                                            <input type="text" class="input-form input-text" id="complemento" name="complemento" placeholder="Complemento">
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12">
+                                            <input type="text" class="input-form input-text" id="bairro" name="bairro" placeholder="Bairro">
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12">
+                                            <input type="text" class="input-form input-text" id="cidade" name="cidade" placeholder="Cidade">
+                                        </div>
+                                        <div class="col-12 col-lg-8 col-md-6">
+                                            <input type="text" class="input-form input-text" id="cep" name="cep" placeholder="Cep" onkeypress="$(this).mask('00000-000');">
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                            <input type="text" class="input-form input-text" id="estado" name="estado" placeholder="Estado">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-12" style="padding:0 20px;">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <h3 class="title-option">Artistas</h3>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <form class="add-artista form" id="add-artista" action="#" method="#">
+                                <div class="row" style="padding:0 10px;">
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="nome-artista" name="nome-artista" placeholder="Nome">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="spotify-artista" name="spotify-artista" placeholder="Spotify">
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-12">
+                                        <input type="text" class="input-form input-text" id="inicio-artista" name="inicio-artista" placeholder="Início" onkeypress="$(this).mask('00:00');">
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-12">
+                                        <input type="text" class="input-form input-text" id="fim-artista" name="fim-artista" placeholder="Fim" onkeypress="$(this).mask('00:00');">
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-12">
+                                        <input type="text" class="input-form input-text" id="valor-artista" name="valor-artista" placeholder="Valor">
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-12">
+                                        <input type="file" name="imagem-artista" id="imagem-artista" class="inputfile"/>
+                                        <label for="imagem-artista"><span>Imagem</span></label>
+                                    </div>
+                                    <div class="col-12 col-lg-8 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="table-event">
+                                <table class="table-event table-artista" id="table-artista">
+                                    <thead>
+                                        <tr>
+                                            <th class="nome-art">Nome</th>
+                                            <th class="horario-art">Horário</th>
+                                            <th class="img-art">Imagem</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="nome-art">Roberto Carlos</td>
+                                            <td id="horario-art">00:30</td>
+                                            <td id="img-art"><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="nome-art">Marisa Monte</td>
+                                            <td id="horario-art">22:00</td>
+                                            <td id="img-art"><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <h3 class="title-option">Ingressos</h3>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 d-none d-lg-block d-xl-block">
+                            <h3 class="title-option">Ingressos Criados</h3>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <form class="form-ingressos form" id="form-ingresso" action="#" method="#">
+                                <div class="row" style="padding:0 10px;">
+                                    <div class="col-12 col-lg-7 col-md-12">
+                                        <input type="text" class="input-form input-text" id="nome-ingresso" name="nome-ingresso" placeholder="Nome">
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-12">
+                                        <input type="text" class="input-form input-text" id="lote-ingresso" name="lote-ingresso" placeholder="Número do Lote">
+                                    </div>
+                                    <div class="col-12 col-lg-7 col-md-12">
+                                        <input type="text" class="input-form input-text" id="valor-ingresso" name="valor-ingresso" placeholder="Valor">
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-12">
+                                        <input type="text" class="input-form input-text" id="qtd-ingresso" name="qtd-ingresso" placeholder="Quantidade">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <div class="chave-sexo">
+                                            <span>Masculino</span>
+                                            <div class="check-radio">
+                                            <input type="checkbox"/>
+                                            </div>
+                                            <span>Feminino</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-7 col-md-12">
+                                        <label class="checkbox">
+                                            <span class="checkbox__input">
+                                              <input type="checkbox" name="ativo" id="ativo">
+                                              <span class="checkbox__control">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="rgba(9, 202, 52,1)"/></svg>
+                                              </span>
+                                            </span>
+                                            <span class="radio__label">Ativo</span>
+                                          </label>
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <h3 class="title-option d-block d-lg-none d-xl-none">Ingressos Criados</h3>
+                            <div class="table-event">
+                                <table class="table-ingressos" id="table-ingressos">
+                                    <tboby>
+                                        <tr>
+                                            <td class="n-ingresso">Pista</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$20,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="n-ingresso">Camarote</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$80,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="n-ingresso">Área Vip</td>
+                                            <td class="s-ingresso">M</td>
+                                            <td class="v-ingresso">R$120,00</td>
+                                            <td class="q-ingresso">200</td>
+                                        </tr>
+                                    </tboby>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <h3 class="title-option">Bares</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-12">
+                            <form class="form-bares form" id="form-bares" action="#" method="post">
+                                <div class="row" style="padding:0 10px;">
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="nome-bar" name="nome-bar" placeholder="Nome">
+                                    </div>
+                                    <div class="col-10 col-lg-10 col-md-10">
+                                        <input type="text" class="input-form input-text" id="usuario-bar" name="usuario-bar" placeholder="Usuário">
+                                    </div>
+                                    <div class="col-2 col-lg-2 col-md-2">
+                                        <button class="input-more" id="add-more" name="add-more">+</button>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-8 col-md-12">
+                            <div class="table-event">
+                                <table class="table-bares" id="table-bares">
+                                    <thead>
+                                        <tr>
+                                            <th class="name-bar">Nome</th>
+                                            <th>Usuários</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name-bar">Bar 01</td>
+                                            <td>João</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-bar">Bar 02</td>
+                                            <td>Maria</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name-bar">Bar 03</td>
+                                            <td>Felizberta</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <h3 class="title-option">Adicionar Bebidas</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-12">
+                            <form class="form-bebidas form" id="form-bares" action="#" method="post">
+                                <div class="row" style="padding:0 10px;">
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="marca-bebida" name="marca-bebida" placeholder="Marca">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="qtd-bebida" name="qtd-bebida" placeholder="Quantidade">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="custo-bebida" name="custo-bebida" placeholder="Preço de Custo">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="venda-bebida" name="venda-bebida" placeholder="Valor de Venda">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="tipo-bebida" name="tipo-bebida" placeholder="Tipo de Bebida">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="file" name="imagem-bebida" id="imagem-bebida" class="inputfile"/>
+                                        <label for="imagem-bebida"><span>Imagem</span></label>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-8 col-md-12">
+                            <div class="table-event">
+                                <table class="table-bebidas" id="table-bebidas">
+                                    <thead>
+                                        <tr>
+                                            <th>Marca</th>
+                                            <th>Quantidade</th>
+                                            <th>Custo</th>
+                                            <th>Venda</th>
+                                            <th>Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Cerveja</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Cerveja</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skol</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Cerveja</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <h3 class="title-option">Adicionar Comidas</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-12">
+                            <form class="form-comidas form" id="form-bares" action="#" method="post">
+                                <div class="row" style="padding:0 10px;">
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="nome-comida" name="nome-comida" placeholder="Nome">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="qtd-comida" name="qtd-comida" placeholder="Quantidade">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="custo-comida" name="custo-comida" placeholder="Preço de Custo">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="venda-comida" name="venda-comida" placeholder="Valor de Venda">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="text" class="input-form input-text" id="tipo-comida" name="tipo-comida" placeholder="Tipo de Comida">
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="file" name="imagem-comida" id="imagem-comida" class="inputfile"/>
+                                        <label for="imagem-comida"><span>Imagem</span></label>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <input type="submit" class="input-form input-submit" value="Salvar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-8 col-md-12">
+                            <div class="table-event">
+                                <table class="table-comidas" id="table-comidas">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Quantidade</th>
+                                            <th>Custo</th>
+                                            <th>Venda</th>
+                                            <th>Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Churros</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Fritura</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>HotDog</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Lanche</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hamburguer</td>
+                                            <td>5000</td>
+                                            <td>R$5,90</td>
+                                            <td>R$10,90</td>
+                                            <td>Lanche</td>
+                                            <td><img src="../images/perfil.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ <script src="../js/uploads.js"></script>
+ <script src="../js/custom-file-input.js"></script>
+</body>
+</html>

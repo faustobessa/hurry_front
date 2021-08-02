@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Hurry - Eventos Pendentes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#302F2F">
+<meta name="apple-mobile-web-app-status-bar-style" content="#302F2F">
+<meta name="msapplication-navbutton-color" content="#302F2F">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link rel="icon" href="../images/favicon.png" sizes="32x32" />
+<link rel="icon" href="../images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/favicon.png" />
+<meta name="msapplication-TileImage" content="images/favicon.png" />
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/forms.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main eventos-pendentes-page">
+    <!-- Início da Navegação -->
+    <button class="menu-button d-block d-lg-none d-xl-none"><span>MENU</span></button>
+    <div class="container">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="nav-section">
+                <div class="logo"><img src="../images/hurry_logo.png" alt="Hurry" title="Hurry"></div>
+                <div class="user-status">
+                    <div id="img-perfil" class="img-perfil"><img src="../images/perfil.png"></div>
+                    <div id="name-perfil" class="name-perfil"><span>João da Silva</span></div>
+                </div> 
+                <div class="navegacao">  
+                    <ul id="menu-bar" class="menu">
+                        <li id="item-dash"><a href="#" class="open-page">Dashboard</a></li>
+                        <li id="item-eventos-pendetes"><a href="#" class="open-page">Eventos Pendentes</a></li>
+                        <li id="item-cria-evento"><a href="#" class="open-page">Criar Eventos</a></li>
+                        <li id="item-forcecedores"><a href="#" class="open-page">Fornecedores</a></li>
+                        <li id="item-users"><a href="#" class="open-page">Usuários</a></li>
+                        <li id="item-parceiros"><a href="#" class="open-page">Parceiros</a></li>
+                        <li id="item-logout"><a href="#" class="logout-section">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim da Navegação --> 
+
+            <div class="body-section">
+                <div class="row">
+                    <div class="col-12 col-xl-8 col-lg-12">
+
+                        <!-- Início da Tabelas -->
+                        <div class="body-interno">
+                            <div class="cabecalho-section">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-12">
+                                        <h2 class="title-section">Eventos Pendentes</h2>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-12">
+                                        <form class="form-filter form" id="form-filter" action="#" method="post">
+                                            <input type="text" class="input-form input-text" id="filtra-pendentes" name="filtra-pendentes" placeholder="Localizar Evento">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tabela de evento pendente-->
+                            <div class="lista-eventos-pendentes">
+                                <div class="box-evento-p">
+                                    <h6 class="title-event">Evento X</h6>
+                                    <div class="event-details">
+                                        <div class="tabela">
+                                            <table class="event-pending">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Usuário</td>
+                                                        <td>Data</td>
+                                                        <td>Endereço</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Fernando</td>
+                                                        <td>22/11/21</td>
+                                                        <td>Rua XYZ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-acao">
+                                            <button class="btn-analisar" id="btn-analisar">Analisar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da tabela evento pendente -->
+                        </div>
+                        <!-- Fim da Navegação -->
+
+                    </div>
+                    <div class="col-12 col-xl-4 col-lg-12">
+                        <!-- Início da Adicão de Parceiro -->
+                        <div class="body-interno">
+                            <h6 class="title-add-parceiro">Adicionar Parceiro</h6>
+                            <form class="form-add-parceiro form" id="form-add-parceiro" action="#" method="post">
+                                <input type="email" class="input-form input-text" id="email-parceiro" name="email-parceiro" placeholder="E-mail do Parceiro">
+                                <input type="submit" class="input-form input-submit" value="Enviar Link">
+                            </form>
+                        </div>
+                        <!-- Fim Adição de parceiro -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="../js/uploads.js"></script>
+</body>
+</html>

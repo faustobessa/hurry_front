@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Hurry - Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#302F2F">
+<meta name="apple-mobile-web-app-status-bar-style" content="#302F2F">
+<meta name="msapplication-navbutton-color" content="#302F2F">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link rel="icon" href="../images/favicon.png" sizes="32x32" />
+<link rel="icon" href="../images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../images/favicon.png" />
+<meta name="msapplication-TileImage" content="images/favicon.png" />
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/forms.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+
+    <!-- Início da Navegação-->
+    <button class="menu-button d-block d-lg-none d-xl-none"><span>MENU</span></button>
+    <div class="container">
+        <div class="content">
+            <div class="overlay"></div>
+            <div class="nav-section">
+                <div class="logo"><img src="../images/hurry_logo.png" alt="Hurry" title="Hurry"></div>
+                <div class="user-status">
+                    <div id="img-perfil" class="img-perfil"><img src="../images/perfil.png"></div>
+                    <div id="name-perfil" class="name-perfil"><span>João da Silva</span></div>
+                </div> 
+                <div class="navegacao">  
+                    <ul id="menu-bar" class="menu">
+                        <li id="item-dash"><a href="#" class="open-page">Dashboard</a></li>
+                        <li id="item-eventos-pendetes"><a href="#" class="open-page">Eventos Pendentes</a></li>
+                        <li id="item-cria-evento"><a href="#" class="open-page">Criar Eventos</a></li>
+                        <li id="item-forcecedores"><a href="#" class="open-page">Fornecedores</a></li>
+                        <li id="item-users"><a href="#" class="open-page">Usuários</a></li>
+                        <li id="item-parceiros"><a href="#" class="open-page">Parceiros</a></li>
+                        <li id="item-logout"><a href="#" class="logout-section">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+             <!-- Fim da Navegação-->
+
+            <div class="body-section">
+                <!-- Inicio dos Boxes de resultados-->
+                <div class="resultados">
+                    <div class="totais">
+                        <div class="box-result">
+                            <h4>Total Ingressos Vendidos</h4>
+                            <h2 class="total">50.000</h2>
+                        </div>
+                        <div class="box-result">
+                            <h4>Investimento Geral</h4>
+                            <h2 class="total">R$2.000,00</h2>
+                        </div>
+                        <div class="box-result">
+                            <h4>Lucro Geral dos Eventos</h4>
+                            <h2 class="total">R$2.000,00</h2>
+                        </div>
+                        <div class="box-result">
+                            <h4>Faturamento Geral</h4>
+                            <h2 class="total">R$500.000,00</h2>
+                        </div>
+                    </div>
+                    <div class="geral">
+                        <div class="box-result">
+                            <div class="result">
+                                <h3>Comissão Geral</h3>
+                                <h2 class="total">R$500.000,00</h2>
+                            </div>
+                            <div class="result">
+                                <h3>Media Geral</h3>
+                                <h2 class="total">35%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim dos Boxes de resultados-->
+
+                <!-- Inicio Grafico Hurry-->
+                <div class="grafico-hurry">
+
+                </div>
+                <!-- Fim Grafico Hurry-->
+                
+                <!-- Inicio parceiros rentavéis-->
+                <div class="parceiros-hurry">
+                    <h6>Parceiros mais rentáveis</h6>
+                    <div class="table-parceiros">
+                        <table class="parceiros-rentaveis">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nome</th>
+                                    <th>Faturamento</th>
+                                    <th>Comissão</th>
+                                    <th>Ingressos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>João</td>
+                                    <td>R$1.000.000,00</td>
+                                    <td>R$900.000,00</td>
+                                    <td>500000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Fim parceiros rentavéis-->
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="../js/uploads.js"></script>
+</body>
+</html>
